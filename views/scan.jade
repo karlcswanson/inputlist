@@ -1,0 +1,8 @@
+extends layout
+block link
+  -var selected = 'Frequency Scan';
+
+block content
+  div.scan
+    h1: a(href="/scans/wwb.csv") Shure WWB Scan
+    span Last Modified #{last_modified}

@@ -1,0 +1,26 @@
+extends layout
+block link
+  -var selected = 'Input List';
+
+
+block content
+  table(class="table table-striped table-bordered")
+    thead
+      tr.head
+        th(style="text-align: center;") Input
+        th Item
+        th(style="text-align: center;") 48v
+        th(style="text-align: center;") ST LINK
+    tbody
+      each channel in inputlist
+        tr
+          td(style="text-align: center;") #{channel.channel}
+          td #{channel.description}
+          if channel.phantom
+            td(style="text-align: center;"): span(class="glyphicon glyphicon-flash")
+          else
+            td: span 
+          if channel['st link']
+            td(style="text-align: center;"): span(class="glyphicon glyphicon-sound-stereo")
+          else
+            td: span

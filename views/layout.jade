@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  block link
+    -var selected = 'Input List';
+  
+  -var menu = {'Input List': '/', 'Frequency Scan':'/scan'};
+
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no")
+    title= title
+    link(rel="apple-touch-icon" sizes="144x144" href="/images/icon.png")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name="apple-mobile-web-app-title" content="Input List")
+    link(rel='stylesheet' href='/stylesheets/bootstrap.min.css')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/bootstrap.min.js')
+  
+  body
+    nav(class="navbar navbar-inverse navbar-fixed-top")
+      div(class="container-fluid")
+        div(class="navbar-header")
+          ul(class="nav navbar-nav")
+            each val, key in menu
+              if selected === key
+                li.active: a(href=val, title=key)= key
+              else
+                li: a(href=val, title=key)= key
+
+    block content
