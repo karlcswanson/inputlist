@@ -2,7 +2,7 @@
   {
     "host": "airlock.production.wonderland.camp",
     "name": "PFSense Router",
-    "URL": "https://airlock.production.wonderland.camp/",
+    "URL": "https://airlock.production.wonderland.camp/"
   },
   {
     "host": "192.168.70.15",
@@ -11,31 +11,31 @@
   {
     "host": "iem.switch",
     "name": "IEM Switch",
-    "URL": "http://iem.switch/",
+    "URL": "http://iem.switch/"
   },
   {
     "host": "foh.switch",
     "name": "FOH Switch",
-    "URL": "https://foh.switch/",
+    "URL": "https://foh.switch/"
   },
   {
     "host": "rio.switch",
     "name": "Rio Switch",
-    "URL": "https://rio.switch/",
+    "URL": "https://rio.switch/"
   },
   {
     "host": "192.168.70.6",
     "name": "AUX Switch",
-    "URL": "http://192.168.70.6/",
+    "URL": "http://192.168.70.6/"
   },
   {
     "host": "192.168.70.7",
     "name": "Ubiquiti",
-    "URL": "https://192.168.70.7/",
+    "URL": "https://192.168.70.7/"
   },
   {
     "host": "apple.com",
     "name": "Apple",
-    "URL": "https://10.231.1.4/",
+    "URL": "https://10.231.1.4/"
   }
 ]

@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var inputlist = require('../inputlist.json')
+var inputlist = require('../config/inputlist.json')
 
 
 /* GET home page. */
