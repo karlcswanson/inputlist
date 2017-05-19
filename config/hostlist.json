@@ -1,0 +1,23 @@
+[
+  {
+    "host": "10.231.1.1",
+    "name": "WatchGuard",
+    "URL": "https://10.231.1.1/",
+  },
+  {
+    "host": "10.231.1.50",
+    "name": "Main Campus Switch",
+    "URL": "https://10.231.1.50/",
+  },
+  {
+    "host": "10.231.1.4",
+    "name": "VMWare",
+    "URL": "https://10.231.1.4/",
+  },
+  {
+    "host": "apple.com",
+    "name": "Apple",
+    "URL": "https://10.231.1.4/",
+  }
+]
+
