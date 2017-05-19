@@ -6,7 +6,7 @@ var last_modified;
 
 
 router.get('/', function(req, res, next) {
-  var stats = fs.statSync("/home/pi/inputlist/public/scans/wwb.csv");
+  var stats = fs.statSync("./public/scans/wwb.csv");
   last_modified = moment(stats['mtime']);
   last_modified = last_modified.fromNow();
   res.render('scan', { title: 'TSC | Frequency Scan', last_modified: last_modified });

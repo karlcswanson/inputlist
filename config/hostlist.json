@@ -34,6 +34,10 @@
     "URL": "https://192.168.70.7/"
   },
   {
+    "host": "8.8.8.8",
+    "name": "Google DNS"
+  },
+  {
     "host": "apple.com",
     "name": "Apple",
     "URL": "https://10.231.1.4/"

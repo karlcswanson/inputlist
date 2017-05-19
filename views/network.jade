@@ -5,22 +5,10 @@ block link
 
 block content
   table(class="table table-striped table-bordered")
-    thead
-      tr.head
-        th(style="text-align: center;") Host
-        th Status
-        th(style="text-align: center;") Timestamp
-        th(style="text-align: center;") Node
     tbody
-      each channel in inputlist
-        tr
-          td(style="text-align: center;") #{channel.channel}
-          td #{channel.description}
-          if channel.phantom
-            td(style="text-align: center;"): span(class="glyphicon glyphicon-flash")
+      each host in host_list
+        tr(class={"success": host.ping, "danger":!host.ping})
+          if host.URL
+            td(style="text-align: center;"): a(href=host.URL) #{host.name}
           else
-            td: span 
-          if channel['st link']
-            td(style="text-align: center;"): span(class="glyphicon glyphicon-sound-stereo")
-          else
-            td: span
+            td(style="text-align: center;") #{host.name}
