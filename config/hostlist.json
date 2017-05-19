@@ -1,18 +1,37 @@
 [
   {
-    "host": "10.231.1.1",
-    "name": "WatchGuard",
-    "URL": "https://10.231.1.1/",
+    "host": "airlock.production.wonderland.camp",
+    "name": "PFSense Router",
+    "URL": "https://airlock.production.wonderland.camp/",
   },
   {
-    "host": "10.231.1.50",
-    "name": "Main Campus Switch",
-    "URL": "https://10.231.1.50/",
+    "host": "192.168.70.15",
+    "name": "QL5"
   },
   {
-    "host": "10.231.1.4",
-    "name": "VMWare",
-    "URL": "https://10.231.1.4/",
+    "host": "iem.switch",
+    "name": "IEM Switch",
+    "URL": "http://iem.switch/",
+  },
+  {
+    "host": "foh.switch",
+    "name": "FOH Switch",
+    "URL": "https://foh.switch/",
+  },
+  {
+    "host": "rio.switch",
+    "name": "Rio Switch",
+    "URL": "https://rio.switch/",
+  },
+  {
+    "host": "192.168.70.6",
+    "name": "AUX Switch",
+    "URL": "http://192.168.70.6/",
+  },
+  {
+    "host": "192.168.70.7",
+    "name": "Ubiquiti",
+    "URL": "https://192.168.70.7/",
   },
   {
     "host": "apple.com",
@@ -20,4 +39,3 @@
     "URL": "https://10.231.1.4/",
   }
 ]
-

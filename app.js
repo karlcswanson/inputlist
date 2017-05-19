@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var scan = require('./routes/scan');
+var network = require('./routes/network');
 var users = require('./routes/users');
 
 var app = express();
@@ -24,6 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/network', network);
 app.use('/scan', scan);
 app.use('/users', users);
 
