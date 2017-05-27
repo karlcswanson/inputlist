@@ -12,6 +12,10 @@ var users = require('./routes/users');
 
 var app = express();
 
+
+// __basedir - global var for app base directory
+global.__basedir = __dirname;
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
