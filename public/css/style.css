@@ -24,4 +24,8 @@ a {
   padding-left: 30px;
 }
 
+.container-fluid {
+   max-width:768px;
+}
+
 body { padding-top: 70px; }
