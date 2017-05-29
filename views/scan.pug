@@ -2,7 +2,14 @@ extends layout
 block link
   -var selected = 'Frequency Scan';
 
+block append head
+  script(src="/js/Chart.bundle.js")
+  script(src="/js/utils.js")
+  script(src="/js/rtlchart.js")
+
 block content
+  div.graph
+    canvas#canvas
   div.scan
     h1: a(href="/scans/wwb.csv") Shure WWB Scan
     span Last Modified #{last_modified}

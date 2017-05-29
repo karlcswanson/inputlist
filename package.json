@@ -14,6 +14,7 @@
   "dependencies": {
     "body-parser": "~1.15.1",
     "bootstrap": "^3.3.7",
+    "chart.js": "^2.6.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.3.1",
     "express": "~4.14.0",

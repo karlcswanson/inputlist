@@ -31,6 +31,10 @@ app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); /
 app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redirect JS jQuery
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
 app.use('/fonts', express.static(__dirname + '/node_modules/bootstrap/dist/fonts')); // redirect fonts bootstrap
+app.use('/js', express.static(__dirname + '/node_modules/chart.js/dist')); // redirect js chart.js
+app.use('/js', express.static(__dirname + '/node_modules/chart.js/dist')); // redirect js chart.js
+app.use('/js', express.static(__dirname + '/node_modules/chart.js/samples')); // redirect js chart.js
+
 
 app.use('/', routes);
 app.use('/network', network);
