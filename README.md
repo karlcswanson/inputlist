@@ -20,6 +20,7 @@ Add the following to `/etc/rc.local`
 `iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000`
 
 * Download Input List ```$ git clone https://github.com/karlcswanson/inputlist.git```
+* Install additional node modules `$ npm install`
 
 * Edit user crontab `$ crontab -e`
 ```
