@@ -1,5 +1,5 @@
 # Input List
-A network multi tool for live sound applications
+Input List is a network multi tool for live sound applications.  
 
 ## Installation Notes
 * Redirect port 80 to port 3000 for node
@@ -12,4 +12,7 @@ Add the following to `/etc/rc.local`
 */5 * * * * /home/pi/sdr/scan_wwb.sh >/dev/null 2>&1                    
 @reboot /home/pi/inputlist/node_server_init.sh
 ```
+
+## Network Configuration
+
 
