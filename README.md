@@ -10,10 +10,10 @@ Input List is a network multi tool for live sound applications.
 * Install [node.js](https://nodejs.org).  Check out the installation  instructions for your platform on the node.js [download site](https://nodejs.org/en/download/).
 * Install [RTL-SDR](http://osmocom.org/projects/sdr/wiki/rtl-sdr) tools
 
-```
-sudo apt-get update
-sudo apt-get install rtl-sdr
-```
+  ```
+  sudo apt-get update
+  sudo apt-get install rtl-sdr
+  ```
 
 * Redirect port 80 to port 3000 for node
 Add the following to `/etc/rc.local`
@@ -27,11 +27,11 @@ Add the following to `/etc/rc.local`
   ```
 
 * Edit user crontab `$ crontab -e`
-```
-* * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/ping.js 2>&1
-*/5 * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/sdr.js 2>&1
-@reboot /home/pi/inputlist/node_server_init.sh
-```
+  ```
+  * * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/ping.js 2>&1
+  */5 * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/sdr.js 2>&1
+  @reboot /home/pi/inputlist/node_server_init.sh
+  ```
 
 ## Network Configuration
 * Reserve an IP address
