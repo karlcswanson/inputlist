@@ -17,11 +17,13 @@ Input List is a network multi tool for live sound applications.
 
 * Redirect port 80 to port 3000 for node
 Add the following to `/etc/rc.local`
-`iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000`
-
-* Download Input List ```$ git clone https://github.com/karlcswanson/inputlist.git```
-* Install additional node modules
   ```
+  iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
+  ```
+
+* Download and install Input List
+  ```
+  $ git clone https://github.com/karlcswanson/inputlist.git
   $ cd inputlist/
   $ npm install
   ```
@@ -32,11 +34,6 @@ Add the following to `/etc/rc.local`
   */5 * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/sdr.js 2>&1
   @reboot /home/pi/inputlist/node_server_init.sh
   ```
-
-## Network Configuration
-* Reserve an IP address
-* Make a custom DNS entry
-
 
 ## Hardware
 This app is a simple node.js app.  It can run on a $35 [Raspberry Pi](http://amzn.to/2qwdky5) or a $350 [Intel NUC](http://amzn.to/2qABmY5).
