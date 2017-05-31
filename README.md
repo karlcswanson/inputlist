@@ -15,7 +15,7 @@ Input List is a network multi tool for live sound applications.
   sudo apt-get install rtl-sdr
   ```
 
-* Redirect port 80 to port 3000 for node
+* The app listens on port 3000 by default.  Add this firewall rule to redirect requests at port 80 to 3000.  If you are interested in other ways of doing this, check out this [post](https://eladnava.com/binding-nodejs-port-80-using-nginx/).
 Add the following to `/etc/rc.local`
   ```
   iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
