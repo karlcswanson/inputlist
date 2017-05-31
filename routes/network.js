@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
 var moment = require('moment');
-var host_list = require('../public/scans/host_list_res.json')
+var net_scan = require('../public/scans/net_scan.json')
 
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('network', { title: 'TSC | Network', 'host_list': host_list, moment:moment });
+  var last_modified = moment(net_scan["last_check"]);
+  last_modified = last_modified.fromNow();
+  res.render('network', { title: 'TSC | Network', 'net_scan': net_scan, last_modified:last_modified });
 });
 
 module.exports = router;

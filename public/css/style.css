@@ -28,4 +28,8 @@ a {
    max-width:768px;
 }
 
+#netres tr td {
+  text-align: center;
+}
+
 body { padding-top: 70px; }
