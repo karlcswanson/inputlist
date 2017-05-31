@@ -11,6 +11,7 @@ var json = (function () {
   });
   return json;
 })();
+
 var blob = json["blob"];
 var color = Chart.helpers.color;
 var scatterChartData = {
@@ -45,8 +46,8 @@ window.onload = function() {
             return "TV" + channel + ": " + value;
           },
           stepSize: 6,
-          min: 656,
-          max: 692
+          min: parseInt(json["scan_config"]["lower_frequency"]),
+          max: parseInt(json["scan_config"]["upper_frequency"])
         },
         scaleLabel: {
           display: true,

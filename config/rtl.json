@@ -1,7 +1,6 @@
-
-  {
-    "lower_frequency": "656M",
-    "upper_frequency" : "692M",
-    "bin_size": "25k",
-    "integration_level" : "5M"
-  }
+{
+  "lower_frequency": "656M",
+  "upper_frequency" : "692M",
+  "bin_size": "25k",
+  "integration_level" : "5M"
+}
