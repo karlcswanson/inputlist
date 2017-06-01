@@ -35,10 +35,84 @@ Add the following to `/etc/rc.local`
   @reboot /home/pi/inputlist/node_server_init.sh
   ```
 
-## Hardware
-This app is a simple node.js app.  It can run on a $35 [Raspberry Pi](http://amzn.to/2qwdky5) or a $350 [Intel NUC](http://amzn.to/2qABmY5).
+## Configuration
+There are 3 configuration files in the `/config` directory
 
+### rtl.json
+Set the lower and upper frequencies for the scanner.
+```
+{
+    "lower_frequency": "656M",
+    "upper_frequency" : "692M",
+    "bin_size": "25k",
+    "integration_level" : "5M"
+}
+```
 
-### RTL-SDR Dongles
-* [RTL-SDR Blog R820T2 RTL2832U 1PPM TCXO SMA Software Defined Radio Dongle](http://amzn.to/2qvKjCY)
-* [NooElec NESDR Nano 2+ Tiny Black RTL-SDR USB Set (RTL2832U + R820T2) with Ultra-Low Phase Noise 0.5PPM TCXO, MCX Antenna & Remote Control](http://amzn.to/2qvQarO)
+### inputlist.json
+Set the input list.
+```
+[
+  {
+    "channel": 1,
+    "description": "Eric VOX",
+    "short name" : "EH",
+    "mute group": 1,
+    "DCA": "VOX",
+    "color": "Cyan",
+    "icon": "Dynamic",
+    "phantom": false,
+    "st link": false,
+    "aviom input": 1
+  },
+  {
+    "channel": 2,
+    "description": "Kirsten VOX",
+    "short name" : "KG",
+    "mute group": 1,
+    "DCA": "VOX",
+    "color": "Cyan",
+    "icon": "Dynamic",
+    "phantom": false,
+    "st link": false,
+    "aviom input": 2
+  },
+  {
+    "channel": 3,
+    "description": "Sam VOX",
+    "short name" : "SA",
+    "mute group": 1,
+    "DCA": "VOX",
+    "color": "Cyan",
+    "icon": "Dynamic",
+    "phantom": false,
+    "st link": false,
+    "aviom input": 3
+  }
+]
+```
+
+### hostlist.json
+```
+[
+  {
+    "host": "192.168.70.1",
+    "name": "PFSense Router",
+    "URL": "https://airlock.production/"
+  },
+  {
+    "host": "192.168.70.15",
+    "name": "QL5"
+  },
+  {
+    "host": "iem.switch",
+    "name": "IEM Switch",
+    "URL": "http://iem.switch/"
+  },
+  {
+    "host": "foh.switch",
+    "name": "FOH Switch",
+    "URL": "https://foh.switch/"
+  }
+]
+```
