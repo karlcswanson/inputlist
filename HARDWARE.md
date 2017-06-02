@@ -1,6 +1,11 @@
 # Hardware
 Input List will run on anything from a $35 [Raspberry Pi](http://amzn.to/2sguama) to a $350 [Intel NUC](http://amzn.to/2rr6eyf).  If you want to go the cheap appliance route, start with a raspberry pi running [Raspbian Jessie Lite](https://www.raspberrypi.org/downloads/raspbian/).
 
+
+![front](/public/images/front.jpeg)
+![back](/public/images/back.jpeg)
+
+
 ### BOM
 Electronics
 * [Raspberry PI 3](http://amzn.to/2sguama) - $36.23
