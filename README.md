@@ -26,6 +26,7 @@ Add the following to `/etc/rc.local`
   $ git clone https://github.com/karlcswanson/inputlist.git
   $ cd inputlist/
   $ npm install
+  $ npm install forever -g
   ```
 
 * Edit user crontab `$ crontab -e`

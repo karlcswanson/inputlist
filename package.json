@@ -16,6 +16,7 @@
     "bootstrap": "^3.3.7",
     "chart.js": "^2.6.0",
     "cookie-parser": "~1.4.3",
+    "cron": "^1.2.1",
     "debug": "~2.3.1",
     "express": "~4.14.0",
     "jquery": "^3.2.1",
