@@ -30,9 +30,7 @@ Add the following to `/etc/rc.local`
 
 * Edit user crontab `$ crontab -e`
   ```
-  * * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/ping.js 2>&1
-  */5 * * * * /usr/lib/nodejs/node-v6.10.2/bin/node /home/pi/inputlist/lib/sdr.js 2>&1
-  @reboot /home/pi/inputlist/node_server_init.sh
+  @reboot /home/pi/inputlist/startup_script.sh 2>&1
   ```
 
 ## Configuration
